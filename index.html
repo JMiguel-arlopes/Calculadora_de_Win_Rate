@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora de Win Rate.</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Calculadora de Win </h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Personagens</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Personagem</th>
+							<th>Partidas</th>
+							<th>Vitórias</th>
+							<th>Derrotas</th>
+							<th>Taxa de vitória (atual)</th>
+							<th>Taxa de vitória desejada (%)</th>
+							<th>Vitórias necessárias para alcançar</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-personagens">
+						<tr class="personagem">
+							<td class="info-nome">Gusion</td>
+							<td class="info-partida">340</td>
+							<td class="info-vitoria">0</td>
+							<td class="info-derrota">0</td>
+							<td class="info-TVAtual">62.6</td>
+							<td class="info-winrate_desejado">0</td>
+							<td class="info-vitorias_consecutivas">0</td>
+						</tr>
+
+						<tr class="personagem" >
+							<td class="info-nome">Wanwan</td>
+							<td class="info-partida">1371</td>
+							<td class="info-vitoria">0</td>
+							<td class="info-derrota">0</td>
+							<td class="info-TVAtual">60.0</td>
+							<td class="info-winrate_desejado">0</td>
+							<td class="info-vitorias_consecutivas">0</td>
+						</tr>
+
+						<tr class="personagem" >
+							<td class="info-nome">Ling</td>
+							<td class="info-partida">770</td>
+							<td class="info-vitoria">0</td>
+							<td class="info-derrota">0</td>
+							<td class="info-TVAtual">63.0</td>
+							<td class="info-winrate_desejado">0</td>
+							<td class="info-vitorias_consecutivas">0</td>
+						</tr>
+
+						<tr class="personagem">
+							<td class="info-nome">Belerick</td>
+							<td class="info-partida">295</td>
+							<td class="info-vitoria">0</td>
+							<td class="info-derrota">0</td>
+							<td class="info-TVAtual">59.7</td>
+							<td class="info-winrate_desejado">0</td>
+							<td class="info-vitorias_consecutivas">0</td>
+						</tr>
+						<tr class="personagem" >
+							<td class="info-nome">Harith</td>
+							<td class="info-partida">254</td>
+							<td class="info-vitoria">0</td>
+							<td class="info-derrota">0</td>
+							<td class="info-TVAtual">51.1</td>
+							<td class="info-winrate_desejado">0</td>
+							<td class="info-vitorias_consecutivas">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+
+			<section class="container">
+				<h2 id="titulo-form">Adicionar novo personagem</h2>
+				<form id="form-adiciona">
+					<div class="">
+						<label for="nome">Nome:</label>
+						<input id="nome" name="nome" type="text" placeholder="digite o nome do seu personagem" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="partidas">Partidas:</label>
+						<input id="partidas" name="partidas" type="text" placeholder="digite o número de partidas do seu personagem" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="winRate">Taxa de vitória (%):</label>
+						<input id="winRate" name="winRate" type="text" placeholder="digite a taxa de vitória atual do seu personagem" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="desejada">Taxa de vitória desejada (%):</label>
+						<input id="desejada" name="desejada" type="text" placeholder="digite a taxa de vitória que você deseja para seu personagem="campo campo-medio">
+					</div>
+			
+					<button id="adicionar-personagem" class="botao bto-principal">Adicionar</button>
+				</form>
+			</section>
+
+			
+		</main>
+		<script src="js/calculos.js"></script>
+		<script src="js/form.js"></script>
+	</body>
+</html>
